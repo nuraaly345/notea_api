@@ -2,7 +2,7 @@
 from django.db.models import (Model, CharField, TextField, DateTimeField)
 
 
-class note(Model):
+class Note(Model):
     title = CharField(max_length=255)
     text = TextField(blank=True)
     created = DateTimeField(auto_now_add=True)
